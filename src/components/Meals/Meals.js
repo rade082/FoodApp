@@ -4,10 +4,10 @@ import MealsSummary from './MealsSummary'
 
 function Meals() {
     return (
-       <React.Fragment>
+    <React.Fragment>
       <MealsSummary/>
       <AvailableMeals/>
-     </React.Fragment> 
+    </React.Fragment> 
     )
 }
 

@@ -1,11 +1,9 @@
-import { useRef, useState} from 'react';
+import { useRef, useState } from 'react';
 
 import Input from '../UI/Input';
 import classes from './MealItemForm.module.css';
-// import CartContext from '../../store/cart-context';
 
 const MealItemForm = (props) => {
-  // const cartCtx  = useContext(CartContext);
   const [amountIsValid, setAmountIsValid] = useState(true);
   const amountInputRef = useRef();
 
@@ -23,6 +21,7 @@ const MealItemForm = (props) => {
       setAmountIsValid(false);
       return;
     }
+
     props.onAddToCart(enteredAmountNumber);
   };
 
